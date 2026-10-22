@@ -7,11 +7,12 @@ class Student{
         cout << "Student created";
     }
     void display(){
-        cout << "Student - " << id << " " << name  << endl;
+        cout << "Student - " << id << " " << name  << " age: " << age << endl;
      }
     private:
     string id;
     string name;
+    int age;
 };
 int main()
 {
