@@ -12,6 +12,11 @@ class Student{
     }
     void display(){
         cout << "Student - " << id << " " << name  << endl;
+        for (double grade : grades)
+    {
+        cout << grade << " ";
+    }
+    cout << endl;
      }
     private:
     string id;
