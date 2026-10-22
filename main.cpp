@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 class Student{
@@ -6,12 +7,16 @@ class Student{
     Student(string id, string name):id(id),name(name){
         cout << "Student created";
     }
+    void addGrade(double grade){
+        grades.push_back(grade);
+    }
     void display(){
         cout << "Student - " << id << " " << name  << endl;
      }
     private:
     string id;
     string name;
+    vector<double> grades;
 };
 int main()
 {
